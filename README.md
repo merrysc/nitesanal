@@ -8,3 +8,5 @@ Code currently implements sklearn package, on review statsmodels give more infor
 Sample data is from one individual who I have absolute rights to use but who unfortunately isn't very good at the task ;)
 
 Starting to split the files for later functioning, collated's output needs changing (it's also using prior PSE, though no real difference).
+
+sizeByPart is the raw data coupled with figures for PSE and Slope for each participant
