@@ -1,16 +1,21 @@
-from __future__ import absolute_import, division, print_function
+#from __future__ import absolute_import, division, print_function
+
+numpy==1.18.5
+pandas==1.2.4
+matplotlib==3.2.2
+scipy==1.50
 
 
-import numpy as np
 
-import pandas as pd
+#import numpy as np
+#import pandas as pd
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
-import math
+#import math
 
-from sklearn import linear_model
-from scipy.special import expit
+#from sklearn import linear_model
+#from scipy.special import expit
 
 #list of current requirements for binder import
