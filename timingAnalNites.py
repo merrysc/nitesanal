@@ -27,7 +27,7 @@ angleSeq = [0,10,20,30,40,50,60,80]
 
 
 ##loads up the spreadsheet
-baseName ='pvm_147all'
+baseName ='LJ2805'
 b = baseName + '.xlsx'
 dataEx = pd.read_excel(b)      
 
