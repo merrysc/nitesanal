@@ -22,12 +22,12 @@ stimLength =[2]
 ### left or right of the screen for the stimulus
 mod = [1, -1]
 angleSeq = [0,10,20,30,40,50,60,80]
-
+#angleSeq= [10,20,40,80]
 
 
 
 ##loads up the spreadsheet
-baseName ='LJ2805'
+baseName ='PVMCol30PrunedMBFirstAngleData'
 b = baseName + '.xlsx'
 dataEx = pd.read_excel(b)      
 
