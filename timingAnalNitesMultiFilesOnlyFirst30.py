@@ -34,6 +34,8 @@ dataEx = pd.read_excel(b)
 
 batchList = np.unique(dataEx['batchID'])
 
+
+
 fI =1
 
 for batchN in batchList:
@@ -46,6 +48,7 @@ for batchN in batchList:
         for fstFrameN in FrameStim:
             sizeAng = justAng.loc[justAng['FrameStim'] == fstFrameN]
             sizeAng = sizeAng[0:30]
+            
             
             totalC = sizeAng.loc[sizeAng['Resp_mean'] == 1]
             
