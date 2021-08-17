@@ -10,7 +10,9 @@ import numpy as np
 import pandas as pd
 import os 
 
-os.chdir('ljob1And3')
+directoryName = 'ljob2'
+
+os.chdir(directoryName )
 
 fileList = []
 dataNew = []
@@ -20,13 +22,21 @@ for file in glob.glob("*.xlsx"):
     
     indexI = len(fileList)
     
-    i =0
-    while i < indexI:
-        baseName = fileList[i]
-        dataEx = pd.read_excel(baseName)   
-        dataNew.append(dataEx)
-        
-        i = i+1
+i =0
+while i < indexI:
+    baseName = fileList[i]
+    dataEx = pd.read_excel(baseName)   
+    
+    dataEx = dataEx[1:len(dataEx)-5]
+    #-5 to account for the metadata
+    
+    dataNew.append(dataEx)
+    
+    i = i+1
 
 
 dataG = pd.concat(dataNew)
+
+    
+c = directoryName  + 'allFilesCol.csv' 
+dataG.to_csv(c)

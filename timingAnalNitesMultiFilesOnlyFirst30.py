@@ -32,6 +32,12 @@ b = baseName + '.xlsx'
 dataEx = pd.read_excel(b)      
 
 
+
+directoryName = 'ljob2'
+
+os.chdir(directoryName )
+
+
 batchList = np.unique(dataEx['batchID'])
 
 

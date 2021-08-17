@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import math
 from sklearn import linear_model
 from scipy.special import expit
-
+import os
 
 xFmin, xFmax = 0, 120*60
 
@@ -24,12 +24,15 @@ mod = [1, -1]
 angleSeq = [0,10,20,30,40,50,60,80]
 #angleSeq= [10,20,40,80]
 
+directoryName = 'ljob2'
+
+os.chdir(directoryName )
 
 
 ##loads up the spreadsheet
-baseName ='PVMCol30PrunedMBFirstAngleData'
-b = baseName + '.xlsx'
-dataEx = pd.read_excel(b)      
+baseName ='ljob2allFilesCol'
+b = baseName + '.csv'
+dataEx = pd.read_csv(b)      
 
 
 
