@@ -27,7 +27,7 @@ while i < indexI:
     baseName = fileList[i]
     dataEx = pd.read_excel(baseName)   
     
-    dataEx = dataEx[1:len(dataEx)-5]
+    dataEx = dataEx[0:len(dataEx)-5]
     #-5 to account for the metadata
     
     dataNew.append(dataEx)
