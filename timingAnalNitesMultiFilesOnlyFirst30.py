@@ -21,7 +21,7 @@ FrameStim=[43,51, 59,67,75]
 stimLength =[2]
 ### left or right of the screen for the stimulus
 mod = [1, -1]
-angleSeq = [0,10,20,30,40,50,60,80]
+angleSeq = [0,10,20,30,40,50,60,70,80]
 
 
 

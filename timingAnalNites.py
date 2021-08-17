@@ -24,16 +24,16 @@ mod = [1, -1]
 angleSeq = [0,10,20,30,40,50,60,80]
 #angleSeq= [10,20,40,80]
 
-directoryName = 'ljob2'
+directoryName = 'ljob1And3'
 
 os.chdir(directoryName )
 
 
 ##loads up the spreadsheet
-baseName ='ljob2allFilesCol'
+baseName ='ljob1And3allFilesCol'
 b = baseName + '.csv'
 dataEx = pd.read_csv(b)      
-
+#dataEx = pd.read_excel(b)
 
 
 
