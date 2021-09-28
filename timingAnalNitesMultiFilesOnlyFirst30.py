@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import math
 from sklearn import linear_model
 from scipy.special import expit
-
+import os
 
 xFmin, xFmax = 0, 120*60
 

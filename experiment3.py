@@ -19,19 +19,22 @@ xFmin, xFmax = 0, 120*60
 
 
 FrameStim=[43,51, 59,67,75]
+#FrameStim=[17,23,29,35,41]
+
+
 stimLength =[2]
 ### left or right of the screen for the stimulus
 mod = [1, -1]
 angleSeq = [0,10,20,30,40,50,60,70, 80]
 #angleSeq= [10,20,40,80]
 
-directoryName = 'ljob1And3'
+directoryName = 'timingExp3'
 
 os.chdir(directoryName )
 
 
 ##loads up the spreadsheet
-baseName ='ljob1And3allFilesCol'
+baseName ='timingExp3allFilesCol'
 b = baseName + '.csv'
 dataEx = pd.read_csv(b)      
 #dataEx = pd.read_excel(b)
@@ -55,7 +58,7 @@ for angleSeqN in angleSeq:
     for fstFrameN in FrameStim:
         sizeAng = justAng.loc[justAng['FrameStim'] == fstFrameN]
        
-        sizeAng = sizeAng[30:60]
+        #sizeAng = sizeAng[30:60]
         
         newArray.append(sizeAng)
         totalC = sizeAng.loc[sizeAng['Resp_mean'] == 1]
@@ -83,7 +86,7 @@ c = baseName + advName + '_results.csv'
 results.to_csv(c)
 
 sampleRate=10000
-X_test = np.linspace(0.5, 1.5, sampleRate*60)
+X_test = np.linspace(0, 2, sampleRate*120)
 plt.title(baseName)
 plt.figure(figsize=(12,12))
 
@@ -166,7 +169,7 @@ psePlt.xlabel(' x-axis retinal eccentricity (deg)')
 psePlt.savefig(baseName+ advName +'PSE')
 psePlt.xticks(PSEResults.angle)
 psePlt.xlim=(20,90)
-psePlt.yticks(np.arange(0.9, 1.3, step=0.05))
+#psePlt.yticks(np.arange(0.9, 1.3, step=0.05))
 
 
 

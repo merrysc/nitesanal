@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import os 
 
-directoryName = 'ljob1And3'
+directoryName = 'timingExp3'
 
 os.chdir(directoryName )
 
