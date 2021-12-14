@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import os 
 
-directoryName = 'timingExp3'
+directoryName = 'supine/pvm'
 
 os.chdir(directoryName )
 
@@ -38,5 +38,7 @@ while i < indexI:
 dataG = pd.concat(dataNew)
 
     
-c = directoryName  + 'allFilesCol.csv' 
+# c = directoryName  + 'allFilesCol.csv' 
+
+c = 'PVMallFilesCol.csv' 
 dataG.to_csv(c)
